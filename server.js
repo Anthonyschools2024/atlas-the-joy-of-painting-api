@@ -4,12 +4,12 @@ const { Pool } = require('pg');
 const cors = require('cors');
 
 // --- DATABASE CONNECTION DETAILS ---
-// IMPORTANT: Replace with your actual database credentials
+// This section has been updated with your password.
 const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'joy_of_painting',
-    password: 'your_password', // Change this!
+    password: 'Tony420', // Updated password
     port: 5432,
 });
 

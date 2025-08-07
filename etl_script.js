@@ -5,19 +5,19 @@ const { Pool } = require('pg');
 const path = require('path');
 
 // --- DATABASE CONNECTION DETAILS ---
-// IMPORTANT: Replace with your actual database credentials
 const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'joy_of_painting',
-    password: 'your_password', // Change this!
+    password: 'Tony420', // Your password
     port: 5432,
 });
 
 // --- FILE PATHS ---
+// UPDATED TO MATCH YOUR EXACT FILENAMES
 const DATA_DIR = 'data';
 const EPISODE_DATES_PATH = path.join(DATA_DIR, 'The Joy Of Painting - Episode Dates');
-const COLORS_USED_PATH = path.join(DATA_DIR, 'The Joy Of Painiting - Colors Used(1)');
+const COLORS_USED_PATH = path.join(DATA_DIR, 'The Joy Of Painiting - Colors Used'); 
 const SUBJECT_MATTER_PATH = path.join(DATA_DIR, 'The Joy Of Painiting - Subject Matter');
 
 // --- HELPER FUNCTIONS ---
